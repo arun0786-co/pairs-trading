@@ -1,0 +1,24 @@
+market = "^NSEI"
+start = "2010-02-01"
+end = "2026-11-01"
+
+formation = 504       # trading days used to pick pairs (2 years)
+trading = 126         # days each selection is traded (6 months)
+top = 5
+max_p = 0.05          # engle-granger p-value cutoff
+half_life = [2, 60]   # allowed spread half-life in days
+entry = 2.0
+exit = 0.5
+stop = 4.0
+cost = 0.001          # per leg per trade, 10 basis points
+
+n_boot = 2000
+random_runs = 20
+seed = 7
+
+[sectors]
+banks = ["HDFCBANK.NS", "ICICIBANK.NS", "KOTAKBANK.NS", "AXISBANK.NS", "SBIN.NS"]
+it = ["TCS.NS", "INFY.NS", "WIPRO.NS", "HCLTECH.NS", "TECHM.NS"]
+auto = ["MARUTI.NS", "M&M.NS", "BAJAJ-AUTO.NS", "HEROMOTOCO.NS", "EICHERMOT.NS"]
+pharma = ["SUNPHARMA.NS", "DRREDDY.NS", "CIPLA.NS", "LUPIN.NS", "DIVISLAB.NS"]
+fmcg = ["HINDUNILVR.NS", "ITC.NS", "NESTLEIND.NS", "BRITANNIA.NS", "DABUR.NS"]
